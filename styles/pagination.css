@@ -1,0 +1,20 @@
+.pagination {
+  margin: 1px auto 96px;
+}
+
+.pagination__button {
+  letter-spacing: 1.5px;
+  color: var(--color-font-default);
+  margin: 0 7px;
+  background-color: transparent;
+  padding: 3px 8px;
+}
+
+.pagination__icon {
+  margin: 0 16px;
+}
+
+.pagination__button_active {
+  background-color: var(--color-primary);
+  color: var(--light-bg-color);
+}

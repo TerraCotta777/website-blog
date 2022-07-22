@@ -2,6 +2,10 @@
 
 @import url("header.css");
 @import url("banner.css");
+@import url("blog.css");
+@import url("posts.css");
+@import url("aside.css");
+@import url("pagination.css");
 
 :root {
   --color-primary: #3d8b74;
@@ -27,10 +31,16 @@ ol {
   list-style: none;
 }
 
+button {
+  border: none;
+}
+
 .page {
   background-color: var(--main-bg-color);
   font-family: "Mulish", sans-serif;
   font-size: 16px;
+	color: var(--color-font-default);
+  letter-spacing: 1.5px;
 }
 
 .title {
@@ -48,6 +58,6 @@ ol {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 16px;
-	padding: 20px 66px 16px;
-	border: none;
+  padding: 20px 66px 16px;
+	letter-spacing: 1.5px;
 }
