@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Mulish:wght@400;600;800&display=swap");
+
+@import url("header.css");
+@import url("banner.css");
+
+:root {
+  --color-primary: #3d8b74;
+  --color-font-default: #232323;
+  --color-font-secondary: #818181;
+  --main-bg-color: #f5f5f5;
+  --form-bg-color: #e2eeea;
+  --light-bg-color: #ffffff;
+  --transparent-bg-color: rgba(255, 255, 255, 0.65);
+  --dark-bg-color: #323232;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.page {
+  background-color: var(--main-bg-color);
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+}
+
+.title {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  color: var(--color-font-default);
+  line-height: 1;
+}
+
+.button {
+  background-color: var(--color-primary);
+  color: var(--light-bg-color);
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+	padding: 20px 66px 16px;
+	border: none;
+}

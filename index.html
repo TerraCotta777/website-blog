@@ -5,22 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
   </head>
-  <body>
-    <header class="header">
+  <body class="page">
+    <header class="header page__header">
       <a class="header__logo logo" href="#">Natalie Laursen</a>
       <nav class="nav">
-        <ul>
-          <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
+        <ul class="nav__menu">
+          <li class="nav__item"><a class="nav__link nav__link_active" href="#">Home</a></li>
           <li class="nav__item"><a class="nav__link" href="#">About</a></li>
           <li class="nav__item"><a class="nav__link" href="#">Marathone</a></li>
           <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <section class="banner">
-      <div class="promo">
-        <h1 class="promo__title">Take part in a 30-day detox marathon</h1>
+    <section class="banner page__banner">
+      <div class="promo banner__promo">
+        <h1 class="promo__title title">Take part in a 30-day detox marathon</h1>
         <p class="promo__description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -29,12 +30,14 @@
         <button class="button promo__button">i am interested</button>
       </div>
     </section>
-    <section class="blog">
+    <section class="blog page__blog">
       <section class="posts">
         <nav class="posts__categories">
           <ul>
             <li class="posts__category">All (106)</li>
-            <li class="posts__category posts__category_active">Receipts (32)</li>
+            <li class="posts__category posts__category_active">
+              Receipts (32)
+            </li>
             <li class="posts__category">Travelings (4)</li>
             <li class="posts__category">Health (14)</li>
             <li class="posts__category">Yoga (5)</li>
@@ -225,7 +228,7 @@
         </button>
       </div>
     </section>
-    <section class="form">
+    <section class="form page__form">
       <h3 class="form__title">subscribe and don't miss new articles</h3>
       <p class="form__text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -238,7 +241,7 @@
         <button class="form__button button" type="submit">send</button>
       </form>
     </section>
-    <footer class="footer">
+    <footer class="footer page__footer">
       <div class="footer__avatar">
         <img
           class="footer__avatar-img"
