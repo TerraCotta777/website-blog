@@ -8,6 +8,7 @@
 @import url("pagination.css");
 @import url("form.css");
 @import url("footer.css");
+@import url("burger.css");
 
 :root {
   --color-primary: #3d8b74;

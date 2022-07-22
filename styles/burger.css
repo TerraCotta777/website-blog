@@ -1,0 +1,122 @@
+.nav__burger {
+  display: none;
+  cursor: pointer;
+  height: 27px;
+  width: 27px;
+  margin: 21px;
+  overflow: visible;
+  position: relative;
+  z-index: 2;
+  position: absolute;
+  right: 0;
+}
+
+.nav__burger-icon,
+.nav__burger-icon::before,
+.nav__burger-icon::after {
+  display: none;
+  background: var(--color-primary);
+  height: 4px;
+  opacity: 1;
+  position: absolute;
+  transition: 0.3s ease-in-out;
+}
+
+.nav__burger-icon::before,
+.nav__burger-icon::after {
+  content: "";
+}
+
+.nav__burger-icon {
+  right: 0px;
+  top: 13px;
+  width: 27px;
+}
+
+.nav__burger-icon:before {
+  right: 0px;
+  top: -10px;
+  width: 16px;
+}
+
+.nav__burger-icon:after {
+  right: 0px;
+  top: 10px;
+  width: 20px;
+}
+
+.nav__burger.close .nav__burger-icon,
+.nav__burger.close .nav__burger-icon::before,
+.nav__burger.close .nav__burger-icon::after {
+	background: var(--form-bg-color);
+}
+
+.nav__burger.close .nav__burger-icon {
+  transform: rotate(-45deg);
+  top: 13px;
+  width: 27px;
+}
+
+.nav__burger.close .nav__burger-icon:before {
+  top: 0px;
+  transform: rotate(90deg);
+  width: 27px;
+}
+
+.nav__burger.close .nav__burger-icon:after {
+  top: 0px;
+  left: 0;
+  transform: rotate(90deg);
+  opacity: 0;
+  width: 0;
+}
+
+.nav__burger-menu {
+  z-index: 1;
+  min-width: 50%;
+  min-height: 100%;
+  position: fixed;
+  top: 0;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+  padding-top: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav__burger-menu.overlay {
+  visibility: visible;
+  opacity: 1;
+  padding-top: 100px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.nav__mobile-item {
+  list-style: none;
+}
+
+.nav__link_mobile {
+  color: var(--form-bg-color);
+  display: block;
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+
+.nav__link_mobile_active {
+	font-weight: 800;
+	color: var(--color-primary)
+}
+
+@media screen and (max-width: 1050px) {
+  .nav__burger {
+    display: block;
+  }
+
+  .nav__burger-icon,
+  .nav__burger-icon::before,
+  .nav__burger-icon::after {
+    display: block;
+  }
+} 
