@@ -1,36 +1,41 @@
 .banner {
-	background-image: url(../src/img/anons.jpeg);
-	/* background-position: 50% 50%; */
-	background-repeat: no-repeat;
-	background-size: cover;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  background-image: url(../src/img/anons.jpeg);
+  /* background-position: 50% 50%; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .page__banner {
-	height: 595px;
-	margin: 38px 48px;
+  height: 595px;
+  margin: 38px 48px;
 }
 
 .promo {
-	background-color: var(--transparent-bg-color);
-	text-align: center;
+  background-color: var(--transparent-bg-color);
+  text-align: center;
 }
 
 .banner__promo {
-	max-width: 723px;
-	padding: 59px 87px;
+  max-width: 723px;
+  padding: 59px 87px;
 }
 
 .promo__title {
-	max-width: 406px;
-	margin: auto;
-	font-size: 28px;
+  max-width: 406px;
+  margin: auto;
+  font-size: 28px;
 }
 
 .promo__description {
-	margin: 26px 0 40px 0;
-	font-size: 18px;
+  margin: 26px 0 40px 0;
+  font-size: 18px;
 }
 
+.promo__button {
+  padding-left: 66px;
+  padding-right: 66px;
+	height: 55px;
+}

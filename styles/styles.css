@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Mulish:wght@400;600;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Mulish:ital,wght@0,400;0,600;0,800;1,400&display=swap');
 
 @import url("header.css");
 @import url("banner.css");
@@ -6,6 +6,8 @@
 @import url("posts.css");
 @import url("aside.css");
 @import url("pagination.css");
+@import url("form.css");
+@import url("footer.css");
 
 :root {
   --color-primary: #3d8b74;
@@ -33,6 +35,7 @@ ol {
 
 button {
   border: none;
+	cursor: pointer;
 }
 
 .page {
@@ -58,6 +61,7 @@ button {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 16px;
-  padding: 20px 66px 16px;
+	padding-top: 20px;
+	padding-bottom: 16px;
 	letter-spacing: 1.5px;
 }

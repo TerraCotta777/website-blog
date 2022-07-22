@@ -20,8 +20,8 @@
 }
 
 .header__logo {
-	margin-top: 17px;
-	flex-basis: 62%;
+  margin-top: 17px;
+  flex-basis: 62%;
 }
 
 .nav {
@@ -30,7 +30,7 @@
 
 .nav__menu {
   height: 100%;
-	margin-top: 5px;
+  margin-top: 5px;
   display: flex;
   align-items: center;
   justify-content: space-between;
