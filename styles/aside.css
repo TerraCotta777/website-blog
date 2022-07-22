@@ -1,0 +1,45 @@
+.aside {
+  padding: 5px 0 0 3px;
+}
+
+.social-networks {
+  display: flex;
+  width: 73%;
+  justify-content: space-between;
+}
+
+.aside__tags {
+  margin-top: 57px;
+}
+
+.tags__title {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+.tags__tag {
+  background-color: var(--color-primary);
+  color: var(--light-bg-color);
+  line-height: 20px;
+  padding: 13px 12px;
+  margin: 6px;
+	letter-spacing: 1.5px;
+}
+
+.tags__cut {
+  margin: 24px 0 66px;
+  display: inline-block;
+  color: var(--color-font-default);
+}
+
+.author__title {
+  font-size: 20px;
+}
+
+.author__image {
+  margin: 17px 0 18px;
+}
+
+.author__about {
+}

@@ -1,0 +1,13 @@
+.blog {
+  padding: 26px 137px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr, auto;
+  grid-column-gap: 40px;
+  grid-row-gap: 80px;
+}
+
+.pagination {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
