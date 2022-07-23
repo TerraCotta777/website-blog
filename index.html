@@ -8,9 +8,32 @@
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body class="page">
-    <header class="header page__header">
+    <header class="header">
       <a class="header__logo logo" href="#">Natalie Laursen</a>
       <nav class="nav">
+        <div class="nav__burger" id="burger-menu">
+          <span class="nav__burger-icon"></span>
+        </div>
+        <div class="nav__burger-menu" id="menu">
+          <ul class="nav__burger-menu-list">
+            <li class="nav__mobile-item">
+              <a
+                class="nav__link nav__link_mobile nav__link_mobile_active"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav__mobile-item">
+              <a class="nav__link nav__link_mobile" href="#">About</a>
+            </li>
+            <li class="nav__mobile-item">
+              <a class="nav__link nav__link_mobile" href="#">Marathone</a>
+            </li>
+            <li class="nav__mobile-item">
+              <a class="nav__link nav__link_mobile" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
         <ul class="nav__menu">
           <li class="nav__item">
             <a class="nav__link nav__link_active" href="#">Home</a>
@@ -238,7 +261,7 @@
         tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor
         sit amet, consectetur adipiscing elit, sed do eiusmod.
       </p>
-      <form>
+      <form class="form__inputs">
         <input
           class="form__input form__input_name"
           type="text"
@@ -294,5 +317,7 @@
         <small>A. Polina 2020. All rights reserved.</small>
       </div>
     </footer>
+
+    <script src="./script.js"></script>
   </body>
 </html>

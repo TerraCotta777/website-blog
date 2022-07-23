@@ -1,10 +1,6 @@
-.page__header {
-  /* height: 77px; */
+.header {
   display: flex;
   padding: 0 138px;
-}
-
-.header {
   background-color: #fff;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
 }
@@ -26,6 +22,7 @@
 
 .nav {
   flex-basis: 38%;
+  position: relative;
 }
 
 .nav__menu {
@@ -44,4 +41,42 @@
 .nav__link_active {
   color: var(--color-primary);
   font-weight: 800;
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    padding: 0 48px;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .nav__menu{
+    display: none;
+  }
+
+	.header__logo {
+		margin-top: 13px;
+    margin-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.header__logo {
+		flex-basis: 70%;
+	}
+
+	.logo {
+		font-size: 28px;
+	}
+
+	.nav {
+		flex-basis: 30%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    padding: 0 28px;
+  }
 }

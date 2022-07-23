@@ -20,6 +20,7 @@
 
 .banner__promo {
   max-width: 723px;
+  margin: 0 30px;
   padding: 59px 87px;
 }
 
@@ -37,5 +38,52 @@
 .promo__button {
   padding-left: 66px;
   padding-right: 66px;
-	height: 55px;
+  height: 55px;
+}
+
+@media screen and (max-width: 1050px) {
+  .banner__promo {
+    padding: 39px 57px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .banner__promo {
+    padding: 39px 57px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .promo__title {
+    font-size: 23px;
+  }
+
+  .promo__description {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .banner__promo {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .page__banner {
+    height: 395px;
+    margin: 23px 28px;
+  }
+
+  .promo__title {
+    font-size: 21px;
+  }
+
+  .promo__description {
+    font-size: 14px;
+  }
+
+  .promo__button {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
 }

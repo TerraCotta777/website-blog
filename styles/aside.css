@@ -24,7 +24,7 @@
   line-height: 20px;
   padding: 13px 12px;
   margin: 6px;
-	letter-spacing: 1.5px;
+  letter-spacing: 1.5px;
 }
 
 .tags__cut {
@@ -35,11 +35,33 @@
 
 .author__title {
   font-size: 20px;
+	font-weight: 700;
 }
 
 .author__image {
   margin: 17px 0 18px;
 }
 
-.author__about {
+@media screen and (max-width: 1200px) {
+  .aside {
+    padding-top: 40px;
+		text-align: center;
+  }
+
+  .social-networks {
+    max-width: 270px;
+		margin: 0 auto;
+  }
+
+	.aside__tags {
+		margin-top: 33px;
+	}
+
+	.tags__cut {
+		margin-bottom: 33px;
+	}
+
+	.author__about {
+		margin: 5px 0 40px;
+	}
 }

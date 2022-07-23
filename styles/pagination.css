@@ -18,3 +18,18 @@
   background-color: var(--color-primary);
   color: var(--light-bg-color);
 }
+
+@media screen and (max-width: 1050px) {
+	.pagination {
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.pagination {
+		margin-bottom: 0;
+	}
+	.pagination__button {
+		margin: 0 3px;
+	}
+}
