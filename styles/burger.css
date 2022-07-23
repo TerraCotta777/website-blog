@@ -3,7 +3,7 @@
   cursor: pointer;
   height: 27px;
   width: 27px;
-  margin: 21px;
+  margin: 21px 0 21px 21px;
   overflow: visible;
   position: relative;
   z-index: 2;
@@ -120,3 +120,9 @@
     display: block;
   }
 } 
+
+@media screen and (max-width: 768px) {
+	.nav__burger-menu {
+		min-width: 33%;
+	}
+}

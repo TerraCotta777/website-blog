@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Mulish:ital,wght@0,400;0,600;0,800;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Mulish:ital,wght@0,400;0,600;0,800;1,400&display=swap");
 
 @import url("header.css");
 @import url("banner.css");
@@ -36,14 +36,14 @@ ol {
 
 button {
   border: none;
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .page {
   background-color: var(--main-bg-color);
   font-family: "Mulish", sans-serif;
   font-size: 16px;
-	color: var(--color-font-default);
+  color: var(--color-font-default);
   letter-spacing: 1.5px;
 }
 
@@ -62,7 +62,24 @@ button {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 16px;
-	padding-top: 20px;
-	padding-bottom: 16px;
-	letter-spacing: 1.5px;
+  padding-top: 20px;
+  padding-bottom: 16px;
+  letter-spacing: 1.5px;
+}
+
+@media screen and (max-width: 768px) {
+  .button {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .page {
+    font-size: 14px;
+  }
+
+  .button {
+    padding-top: 15px;
+    font-size: 13px;
+  }
 }

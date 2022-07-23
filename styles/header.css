@@ -42,3 +42,41 @@
   color: var(--color-primary);
   font-weight: 800;
 }
+
+@media screen and (max-width: 1200px) {
+  .header {
+    padding: 0 48px;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .nav__menu{
+    display: none;
+  }
+
+	.header__logo {
+		margin-top: 13px;
+    margin-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.header__logo {
+		flex-basis: 70%;
+	}
+
+	.logo {
+		font-size: 28px;
+	}
+
+	.nav {
+		flex-basis: 30%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    padding: 0 28px;
+  }
+}
