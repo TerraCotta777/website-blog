@@ -15,7 +15,7 @@
 @media screen and (max-width: 1200px) {
   .blog {
     padding-right: 48px;
-		padding-left: 48px;
+    padding-left: 48px;
     justify-content: space-between;
   }
 }
@@ -23,26 +23,26 @@
 @media screen and (max-width: 1050px) {
   .blog {
     display: flex;
-		flex-direction: column;
-		grid-row-gap: 30px;
+    flex-direction: column;
+    grid-row-gap: 30px;
   }
 
-	.posts {
-		order: 1;
-	}
+  .posts {
+    order: 1;
+  }
 
-	.pagination {
-		order: 2;
-	}
+  .pagination {
+    order: 2;
+  }
 
-	.aside {
-		order: 3;
-	}
+  .aside {
+    order: 3;
+  }
 }
 
 @media screen and (max-width: 600px) {
-	.blog {
+  .blog {
     padding-right: 28px;
-		padding-left: 28px;
-	}
+    padding-left: 28px;
+  }
 }
