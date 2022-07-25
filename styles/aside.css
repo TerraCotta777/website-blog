@@ -35,33 +35,34 @@
 
 .author__title {
   font-size: 20px;
-	font-weight: 700;
+  font-weight: 700;
 }
 
 .author__image {
   margin: 17px 0 18px;
+  max-width: 100%;
 }
 
 @media screen and (max-width: 1200px) {
   .aside {
     padding-top: 40px;
-		text-align: center;
+    text-align: center;
   }
 
   .social-networks {
     max-width: 270px;
-		margin: 0 auto;
+    margin: 0 auto;
   }
 
-	.aside__tags {
-		margin-top: 33px;
-	}
+  .aside__tags {
+    margin-top: 33px;
+  }
 
-	.tags__cut {
-		margin-bottom: 33px;
-	}
+  .tags__cut {
+    margin-bottom: 33px;
+  }
 
-	.author__about {
-		margin: 5px 0 40px;
-	}
+  .author__about {
+    margin: 5px 0 40px;
+  }
 }
