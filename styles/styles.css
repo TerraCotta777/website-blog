@@ -12,6 +12,7 @@
 
 :root {
   --color-primary: #3d8b74;
+  --color-primary-hovered: #40a385;
   --color-font-default: #232323;
   --color-font-secondary: #818181;
   --main-bg-color: #f5f5f5;
@@ -26,7 +27,6 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font: inherit;
 }
 
 ul,
@@ -34,8 +34,13 @@ ol {
   list-style: none;
 }
 
+small {
+  font-size: inherit;
+}
+
 button {
   border: none;
+  font: inherit;
   cursor: pointer;
 }
 
@@ -56,15 +61,47 @@ button {
 }
 
 .button {
+  position: relative;
+  padding-top: 21px;
+  padding-bottom: 14px;
+  border: 2px solid var(--color-primary);
   background-color: var(--color-primary);
   color: var(--light-bg-color);
   font-family: "Josefin Sans", sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 16px;
-  padding-top: 20px;
-  padding-bottom: 16px;
   letter-spacing: 1.5px;
+  transition: all 0.35s;
+}
+
+.button__text {
+  position: relative;
+  z-index: 2;
+}
+
+.button:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--form-bg-color);
+  transition: all 0.35s;
+}
+
+.button:hover {
+  color: var(--color-primary);
+}
+
+.button:hover:after {
+  width: 100%;
+}
+
+.button:active {
+  padding-top: 17px;
+  font-size: larger;
 }
 
 @media screen and (max-width: 768px) {

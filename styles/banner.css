@@ -1,11 +1,10 @@
 .banner {
-  background-image: url(../src/img/anons.jpeg);
-  /* background-position: 50% 50%; */
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url(../src/img/anons.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .page__banner {
@@ -14,14 +13,14 @@
 }
 
 .promo {
-  background-color: var(--transparent-bg-color);
   text-align: center;
+  background-color: var(--transparent-bg-color);
 }
 
 .banner__promo {
   max-width: 723px;
   margin: 0 30px;
-  padding: 59px 87px;
+  padding: 61px 87px 56px 91px;
 }
 
 .promo__title {
@@ -31,14 +30,14 @@
 }
 
 .promo__description {
-  margin: 26px 0 40px 0;
+  margin: 26px 0 42px 0;
   font-size: 18px;
 }
 
 .promo__button {
-  padding-left: 66px;
-  padding-right: 66px;
   height: 55px;
+  padding-left: 63px;
+  padding-right: 60px;
 }
 
 @media screen and (max-width: 1050px) {

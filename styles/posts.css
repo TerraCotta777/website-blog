@@ -1,13 +1,41 @@
 .posts__categories {
-  margin-bottom: 44px;
   max-width: 659px;
+  margin-bottom: 44px;
   display: flex;
   justify-content: space-between;
+}
+
+.posts__category {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .posts__category_active {
   font-weight: 800;
   color: var(--color-primary);
+}
+
+.posts__category:hover {
+  color: var(--color-primary-hovered);
+}
+
+.posts__category::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  background-color: var(--color-primary-hovered);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.posts__category:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .posts-list {
@@ -27,21 +55,22 @@
 
 .post__image-block {
   position: relative;
-  cursor: pointer;
   width: 224px;
   height: 221px;
   margin-right: 48px;
+  cursor: pointer;
 }
 
 .post__info {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: var(--transparent-bg-color);
+  padding: 32px;
   opacity: 0;
+  background-color: var(--transparent-bg-color);
   font-weight: 800;
   line-height: 24px;
-  padding: 32px;
+  transition: opacity 300ms;
 }
 
 .post__image-block:hover .post__info {
@@ -51,8 +80,8 @@
 .post__time,
 .post__tags {
   max-width: 50%;
-  display: block;
   margin-bottom: 26px;
+  display: block;
 }
 
 .post__body {
@@ -66,13 +95,18 @@
 }
 
 .post__text {
-  padding: 17px 0 22px;
+  padding: 18px 0 22px;
 }
 
 .post__cut {
   letter-spacing: 1.1px;
   text-decoration: underline;
   color: var(--color-font-default);
+  transition: color 100ms;
+}
+
+.post__cut:hover {
+  color: var(--color-primary-hovered);
 }
 
 @media screen and (max-width: 1050px) {
@@ -111,16 +145,18 @@
 
   .post__image-block {
     width: 100%;
-    height: 50px;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 30px;
   }
 
   .post__image {
-    object-fit: cover;
     height: auto;
+    object-fit: cover;
   }
 
   .post__title {
     margin-top: 20px;
-		font-size: 18px;
+    font-size: 18px;
   }
 }

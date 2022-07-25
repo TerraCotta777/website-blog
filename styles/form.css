@@ -1,70 +1,79 @@
 .form {
+  padding: 65px 0 64px;
   background-color: var(--form-bg-color);
   text-align: center;
-	padding: 67px 0 64px;
 }
 
 .form__title {
-	margin-bottom: 16px;
+  margin-bottom: 16px;
   font-weight: 700;
   font-size: 24px;
 }
 
 .form__text {
-	max-width: 691px;
-	margin: 0 auto 40px;
+  max-width: 691px;
+  margin: 0 auto 39px;
 }
 
 .form__input {
-	padding: 18px 26px;
-	background-color: var(--light-bg-color);
-	border: none;
-	margin-right: 18px;
-	width: 100%;
-	height: 55px;
+  width: 100%;
+  height: 55px;
+  margin-right: 18px;
+  padding: 18px 26px;
+  border: none;
+  background-color: var(--light-bg-color);
+}
+
+.form__input:focus-visible {
+  border: 2px solid var(--color-primary);
+  outline: none;
 }
 
 .form__input::placeholder {
-	font-style: italic;
+	font-family: "Mulish", sans-serif;
+  font-style: italic;
+	font-size: 16px;
+	letter-spacing: 1.5px;
 }
 
 .form__input_name {
-	max-width: 249px;
+  max-width: 249px;
 }
 
 .form__input_email {
-	max-width: 368px;
+  max-width: 368px;
 }
 
 .form__button {
-	padding-left: 42px;
-	padding-right: 42px;
+	top: 2px;
+  padding-left: 39px;
+  padding-right: 39px;
 }
 
 @media screen and (max-width: 1050px) {
-	.form__inputs {
-		width: 60%;
-		margin: 0 auto;
-		display: flex;
-		flex-direction: column;
-	}
-	
-	.form__input {
-		margin-bottom: 20px;
-		max-width: 100%;
-	}
+  .form__inputs {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__input {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-	.form {
-		padding-right: 25px;
-		padding-left: 25px;
-	}
+  .form {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
 
-	.form__inputs {
-		width: 75%;
-		margin: 0 auto;
-		display: flex;
-		flex-direction: column;
-	}
+  .form__inputs {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
 }
