@@ -27,6 +27,7 @@
   max-width: 406px;
   margin: auto;
   font-size: 28px;
+  font-weight: 400;
 }
 
 .promo__description {
@@ -85,4 +86,23 @@
     padding-left: 36px;
     padding-right: 36px;
   }
+}
+
+@media screen and (max-width: 376px) {
+  .banner__promo {
+    margin: 15px;
+		padding: 18px;
+  }
+
+	.promo__title {
+    font-size: 19px;
+  }
+
+	.promo__description {
+    margin: 20px 0;
+  }
+
+	.promo__button {
+		line-height: 1.2;
+	}
 }
